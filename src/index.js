@@ -1,7 +1,7 @@
 import 'phaser';
 import config from './Config/config';
-import GameScene from './Scenes/GameScene';
-import PreloaderScene from './js/scenes/PreloaderScene';
+import GameScene from './scenes/GameScene';
+import PreloaderScene from './scenes/PreloaderScene';
 
 
 class Game extends Phaser.Game {
