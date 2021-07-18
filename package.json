@@ -1,0 +1,25 @@
+{
+  "name": "Endless-Runner",
+  "version": "1.0.0",
+  "description": "This is a Endless runner game.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ralph-1/Endless-Runner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ralph-1/Endless-Runner/issues"
+  },
+  "homepage": "https://github.com/Ralph-1/Endless-Runner#readme",
+  "devDependencies": {
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
