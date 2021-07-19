@@ -2,7 +2,9 @@ import Phaser from 'phaser';
 import crate from '../assets/crate.png';
 import ground from '../assets/ground.png';
 import background from '../assets/background.png';
-import player from '../../assets/player3.png';
+import player from '../assets/player3.png';
+import leaderboard from '../assets/leaderboard.png';
+import blueButton from '../assets/blue_button.png'
 
 export default class PreloaderScene extends Phaser.Scene {
   constructor() {
@@ -21,7 +23,6 @@ export default class PreloaderScene extends Phaser.Scene {
   }
 
   preload() {
-    this.add.image(400, 200, 'logo');
 
     const progressBar = this.add.graphics();
     const progressBox = this.add.graphics();
@@ -85,18 +86,13 @@ export default class PreloaderScene extends Phaser.Scene {
       assetText.destroy();
     });
 
-    this.load.on('complete', () => {
-      loadingText.setText('Loading ✓');
-      this.ready();
-    });
-
-    this.timedEvent = this.time.delayedCall(2500, this.ready, [], this);
-
     // load assets needed in our game
     this.load.image('crate', crate);
     this.load.image('ground', ground);
     this.load.image('background', background);
     this.load.image('player', player)
+    this.load.image('blueButton', blueButton)
+    this.load.image('leaderboard', leaderboard) 
   }
 
 } 
