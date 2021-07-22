@@ -1,10 +1,11 @@
 import Phaser from 'phaser';
-import crate from '../assets/crate.png';
-import ground from '../assets/ground.png';
 import background from '../assets/background.png';
-import player from '../assets/player3.png';
-import leaderboard from '../assets/leaderboard.png';
-import blueButton from '../assets/blue_button.png'
+import player from '../assets/p1.png';
+import obstacle from '../assets/obstacle.png';
+import bsod from '../assets/fail.jpg';
+import mainButton from '../assets/ui/main_button.png';
+import mainButtonHover from '../assets/ui/main_button_hover.png';
+import ground from '../assets/piso.png';
 
 export default class PreloaderScene extends Phaser.Scene {
   constructor() {
@@ -87,12 +88,15 @@ export default class PreloaderScene extends Phaser.Scene {
     });
 
     // load assets needed in our game
-    this.load.image('crate', crate);
+    this.load.image('mainButton', mainButton);
+    this.load.image('mainButton-hover', mainButtonHover)
     this.load.image('ground', ground);
+    this.load.image('obstacle', obstacle);
     this.load.image('background', background);
-    this.load.image('player', player)
-    this.load.image('blueButton', blueButton)
-    this.load.image('leaderboard', leaderboard) 
+    this.load.image('bsod', bsod) ;
+    this.load.spritesheet('player',
+    player,
+    { frameWidth: 25, frameHeight: 31 });
   }
 
 } 
