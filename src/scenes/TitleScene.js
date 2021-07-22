@@ -5,10 +5,6 @@ export default class TitleScene extends Phaser.Scene {
     super('Title');
   }
 
-  preload() {
-
-  }
-
   centerButton (gameObject, offset = 0) {
     Phaser.Display.Align.In.Center(
       gameObject,
@@ -24,20 +20,14 @@ export default class TitleScene extends Phaser.Scene {
   }
 
   create() {
-    this.gameButton = this.add.sprite(100, 200, 'blueButton').setInteractive();
+    this.gameButton = this.add.sprite(400, 300, 'blueButton').setInteractive();
     this.centerButton(this.gameButton, 1);
 
     this.gameText = this.add.text(0, 0, 'Play', { fontSize: '32px', fill: '#fff' });
     this.centerButtonText(this.gameText, this.gameButton);
 
     this.gameButton.on('pointerdown', () => {
-      this.scene.start('Game');
+      this.scene.start('GamePlay');
     });
-    // this.input.on('pointerover', function (event, gameObjects) {
-    //   gameObjects[0].setTexture('blueButton2');
-    // });
-    // this.input.on('pointerout', function (event, gameObjects) {
-    //   gameObjects[0].setTexture('blueButton1');
-    // });
   }
 }
