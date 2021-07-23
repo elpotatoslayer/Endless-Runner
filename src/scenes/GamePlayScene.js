@@ -41,7 +41,7 @@ export default class GamePlayScene extends Phaser.Scene {
   }
 
   nextScene() {
-    this.scene.start('LeaderBoard');
+    // this.scene.start('LeaderBoard');
   }
 
   create() {
