@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo]()
+[Live Demo](https://60fc1db24103d720d5335c90--adoring-turing-b7fcf6.netlify.app/)
 ### Prerequisites
 
 - Modern Browser (Chrome, Firefox...)
@@ -45,7 +45,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/Ralph-1/Endless-Runner/issues).
 
 ## Show your support
 
