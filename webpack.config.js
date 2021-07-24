@@ -1,6 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -10,7 +8,7 @@ module.exports = {
   },
   devServer: {
     contentBase: './dist',
-    open: true
+    open: true,
   },
   devtool: 'inline-source-map',
   module: {
@@ -18,10 +16,10 @@ module.exports = {
       {
         test: /\.scss$/i,
         use: [
-          "style-loader",
-          "css-loader",
-          "sass-loader"
-        ]
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.css$/i,
@@ -30,8 +28,8 @@ module.exports = {
       {
         test: /\.jpe?g$/i,
         use: [
-          "url-loader"
-        ]
+          'url-loader',
+        ],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -61,19 +59,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         },
-      }
-    ]
+      },
+    ],
   },
-  // plugins: [
-  //   new CleanWebpackPlugin({
-  //     root: path.resolve(__dirname, '../'),
-  //   }),
-  //   new webpack.DefinePlugin({
-  //     CANVAS_RENDERER: JSON.stringify(true),
-  //     WEBGL_RENDERER: JSON.stringify(true),
-  //   }),
-  //   new HtmlWebpackPlugin({
-  //     template: './dist/index.html',
-  //   }),
-  // ],
 };
