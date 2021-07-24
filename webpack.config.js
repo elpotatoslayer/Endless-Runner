@@ -1,4 +1,6 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -71,7 +73,7 @@ module.exports = {
   //     WEBGL_RENDERER: JSON.stringify(true),
   //   }),
   //   new HtmlWebpackPlugin({
-  //     template: './index.html',
+  //     template: './dist/index.html',
   //   }),
   // ],
 };
