@@ -12,11 +12,11 @@ it('Get the scores from the API', async () => {
   fetch.mockResponseOnce(JSON.stringify({
     result: [
       {
-        user: 'Aymen Bida',
+        user: 'Ralph',
         score: 77,
       }],
   }));
   const result = await getScores();
-  expect(result).toEqual({ result: [{ score: 77, user: 'Aymen Bida' }] });
+  expect(result).toEqual({ result: [{ score: 77, user: 'Ralph' }] });
   expect(fetch.mock.calls.length).toEqual(1);
 });
