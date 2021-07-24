@@ -3,7 +3,7 @@ import Phaser from 'phaser';
 import mainButton from '../../assets/ui/main_button.png';
 import mainButtonHover from '../../assets/ui/main_button_hover.png';
 import obstacle from '../../assets/obstacle.png';
-import ground from '../../assets/piso.png';
+import ground from '../../assets/Piso.png';
 import background from '../../assets/background(2).png';
 import bsod from '../../assets/fail.jpg';
 import player from '../../assets/p1.png';
