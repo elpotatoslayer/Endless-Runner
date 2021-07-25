@@ -22,5 +22,3 @@ class Game extends Phaser.Game {
 }
 
 window.game = new Game();
-const canvas = document.querySelector('canvas');
-canvas.classList.add('centered');

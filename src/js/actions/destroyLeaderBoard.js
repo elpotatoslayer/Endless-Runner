@@ -4,5 +4,4 @@ export default function fn() {
   const credits = document.querySelector('p');
   h1.remove();
   table.remove();
-  credits.remove();
 }
