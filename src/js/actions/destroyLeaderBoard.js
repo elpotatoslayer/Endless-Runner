@@ -10,6 +10,6 @@ const destroyLeaderBoard = () => {
   const table = document.querySelector('table');
   h1.remove();
   table.remove();
-}
+};
 
 export default destroyLeaderBoard;

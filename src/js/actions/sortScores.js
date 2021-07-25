@@ -28,6 +28,6 @@ const sortScores = (data) => {
     return -1;
   });
   return sorted;
-}
+};
 
 export default sortScores;

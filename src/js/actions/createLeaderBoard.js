@@ -53,7 +53,7 @@
 //   });
 // }
 
-const createLeaderBoard = data => {
+const createLeaderBoard = (data) => {
   const body = document.querySelector('body');
 
   const h1 = document.createElement('h2');
@@ -106,6 +106,6 @@ const createLeaderBoard = data => {
 
     tbody.appendChild(elementTr);
   });
-}
+};
 
 export default createLeaderBoard;

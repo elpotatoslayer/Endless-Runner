@@ -36,6 +36,6 @@ const createTitle = () => {
   Press again while in the air to double jump.
   Avoid being pushed by the errors.`;
   div.appendChild(para);
-}
+};
 
 export default createTitle;

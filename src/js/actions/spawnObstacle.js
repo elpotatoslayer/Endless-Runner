@@ -11,6 +11,6 @@ const spawnObstacle = (scene, height) => {
   obstacle.setVelocityX(-400);
   obstacle.setPushable(false);
   return obstacle;
-}
+};
 
 export default spawnObstacle;

@@ -35,6 +35,6 @@ const createForm = () => {
   input.setAttribute('type', 'text');
   input.classList.add('nameForm__input');
   input.setAttribute('autofocus', true);
-  div.appendChild(input);  
-}
+  div.appendChild(input);
+};
 export default createForm;

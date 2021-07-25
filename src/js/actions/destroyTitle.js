@@ -14,6 +14,6 @@ const destroyTitle = () => {
   h1.remove();
   div.remove();
   para.remove();
-}
+};
 
 export default destroyTitle;
