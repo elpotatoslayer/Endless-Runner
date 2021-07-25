@@ -1,4 +1,13 @@
-export default function fn() {
+// export default function fn() {
+//   const h1 = document.querySelector('h1');
+//   const div = document.querySelector('div');
+//   const para = document.querySelector('p');
+//   h1.remove();
+//   div.remove();
+//   para.remove();
+// }
+
+const destroyTitle = () => {
   const h1 = document.querySelector('h1');
   const div = document.querySelector('div');
   const para = document.querySelector('p');
@@ -6,3 +15,5 @@ export default function fn() {
   div.remove();
   para.remove();
 }
+
+export default destroyTitle;

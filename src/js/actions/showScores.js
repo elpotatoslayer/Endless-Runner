@@ -1,7 +1,16 @@
 import sortScores from './sortScores';
 import getScores from './getScores';
 
-export default function fn() {
+// export default function fn() {
+//   return getScores()
+//     .then((data) => {
+//       const sorted = sortScores(data.result);
+//       const top10 = sorted.slice(0, 10);
+//       return top10;
+//     });
+// }
+
+const showScores = () => {
   return getScores()
     .then((data) => {
       const sorted = sortScores(data.result);
@@ -9,3 +18,5 @@ export default function fn() {
       return top10;
     });
 }
+
+export default showScores;
