@@ -8,14 +8,7 @@
 - Press SPACE or LEFT MOUSE keys to jump
 - You can press again to double jump
 
-## Concept
-
-- Endless runner game where you control a Running box that is trying to avoid obstacles
-
-## Game play
-
-- You will be able to jump by pressing SPACE or LEFT MOUSE KEY to avoid being pushed back by the obstacles
-- You can press the buttons while in the air to perform a double jump also
+You can check the game design document by following [this link](./GDD.md)
 
 ## Built With 
 
