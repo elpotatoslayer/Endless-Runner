@@ -1,4 +1,4 @@
-sconst createLeaderBoard = (data) => {
+const createLeaderBoard = (data) => {
   const body = document.querySelector('body');
 
   const h1 = document.createElement('h2');
